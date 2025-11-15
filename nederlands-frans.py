@@ -1,9 +1,12 @@
 woorden={'ik':'je',
          'jij':'tu'
          ,'hij':'il'}
-vraag=input(f"wat betekend {woorden['ik']}?")
 
-if vraag =='ik':
-    print("goed gedaan")
-else:
-    print("L")
+for nlwoord in woorden:
+
+    vraag = input(f"wat betekend {woorden[nlwoord]}?")
+
+    if vraag ==nlwoord:
+       print("goed gedaan")
+    else:
+        print("L")
